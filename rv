@@ -1,0 +1,31 @@
+import  math 
+import matplotlib.pyplot as plt
+
+#AEROLAB - AeroCalc
+
+# 1. imput - speed and altitude
+velocity = float(input('Enter velocity (m/S):'))
+altiude = floar(input('Enter altitude (m):'))
+
+#2. Set values 
+Wing_area = 15   #m^2
+CD= 0.8          # Lift coefficient
+CL = 0.04        # Drag coefficient
+
+# 3. Calculations
+# Air density 
+air_density = 1.225 * math.exp(-altitude/8500)
+
+#Dynamic pressure
+dynamic_pressure = 0.5 * air_density * (velocity ** 2)
+
+# Lift and drag
+lift = dynamic_pressure * wing_area * CL
+drag = dynamic_pressure * wing_area * CD
+
+# 4. Print results 
+print('   AEROLAB AeroCalc Results')
+print(f'Air density: {air_density} kg/m^3')
+print(f'Dynamic pressure: {dynamic_pressure} Pa')
+print(f'Lift: {lift} N')
+print(f'Drag: {drag} N')
