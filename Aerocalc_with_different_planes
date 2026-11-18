@@ -16,21 +16,28 @@ choice = input('Enter the number (1, 2 or 3):')
 #Simplified but real world estimates
 if choice == '1':
     plane_name = 'F-16'
-    wing_area = 27.8    # m^2
-    CL = 0.3            # Clean configuration, lift coefficient
-    CD = 0.02           # drag coefficient
+    wing_area = 27.87   # m^2
+    CL = 1.9            # Clean configuration, Max lift coefficient(aprox)
+    CD = 0.0175          # Zero-liftdrag coefficient(aprox)
 
 elif choice == '2':
     plane_name = 'Cessna 172'
     wing_area = 16.2    # m^2
-    CL = 0.5 
-    CD = 0.03
+    CL = 1.52          # Max lift coefficient(aprox)
+    CD = 0.0319        #Zero-liftdrag coefficient(aprox)
 
 elif choice == '3':
-    plane_name = 'ASK 21'
-    wing_area = 16.2 
-    CL = 0.5
-    CD = 0.03
+    plane_name = 'ASK 21'  
+    wing_area = 17.95
+    CL = 1             #Cruise lift coefficient(aprox)
+    CD = 0.015         #Drag coefficient(aprox)
+
+else:
+    print('Invalid choice. Defaulting to Cessna 172.')
+    plane_name = 'Cessna 172'
+    wing_area = 16.2
+    CL = 1.52
+    CD = 0.0319
 
 print(f'You selected: {plane_name}')
 
@@ -44,6 +51,7 @@ dynamic_pressure = 0.5 * air_density * ( velocity**2)
 
 lift = dynamic_pressure * wing_area * CL
 drag = dynamic_pressure * wing_area * CD
+ld_ratio = lift/drag  #Lift to drag ratio (efficiency)
 
 # Output results
 print(f'   Results for {plane_name}   ')
@@ -51,6 +59,7 @@ print(f'Air density: {air_density:.3f} kg/m^3')
 print(f'Dynamic pressure: {dynamic_pressure:.2f} Pa')
 print(f'Lift: {lift:.2f} N')
 print(f'Drag: {drag:.2f} N')
+print(f'L/D Ratio: {ld_ratio:.2f}')
 
 # Graph
 print(f'Opening graph for {plane_name}...(close it to end)')
