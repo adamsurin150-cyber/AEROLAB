@@ -1,0 +1,74 @@
+import  math 
+import matplotlib.pyplot as plt
+
+#AEROLAB - AeroCalc with specific aircraft
+print('   AEROLAB AeroCalc   ')
+
+# Available aircraft
+print('Chose an aircraft:')
+print('1. F-16 (fighter jet)')
+print('2. Cessna 172 (General Aviation)')
+print('3. ASK 21 (Glider)')
+
+choice = input('Enter the number (1, 2 or 3):')
+
+#Aircraft parameters
+#Simplified but real world estimates
+if choice == '1':
+    plane_name = 'F-16'
+    wing_area = 27.8    # m^2
+    CL = 0.3            # Clean configuration, lift coefficient
+    CD = 0.02           # drag coefficient
+
+elif choice == '2':
+    plane_name = 'Cessna 172'
+    wing_area = 16.2    # m^2
+    CL = 0.5 
+    CD = 0.03
+
+elif choice == '3':
+    plane_name = 'ASK 21'
+    wing_area = 16.2 
+    CL = 0.5
+    CD = 0.03
+
+print(f'You selected: {plane_name}')
+
+# Flight conditions
+velocity = float(input('Enter the velocity (m/s):'))
+altitude = float(input('Enter the altitude (m) '))
+
+# Calculations
+air_density = 1.225 * math.exp(-altitude/8500)
+dynamic_pressure = 0.5 * air_density * ( velocity**2)
+
+lift = dynamic_pressure * wing_area * CL
+drag = dynamic_pressure * wing_area * CD
+
+# Output results
+print(f'   Results for {plane_name}   ')
+print(f'Air density: {air_density:.3f} kg/m^3')
+print(f'Dynamic pressure: {dynamic_pressure:.2f} Pa')
+print(f'Lift: {lift:.2f} N')
+print(f'Drag: {drag:.2f} N')
+
+# Graph
+print(f'Opening graph for {plane_name}...(close it to end)')
+
+speeds = []
+lifts = []
+
+for v in range(10, 151, 10): # from 10 m/s to 150 m/s
+    q = 0.5 * air_density * (v**2)
+    current_lift = q * wing_area * CL
+    speeds.append(v)
+    lifts.append(current_lift)
+
+plt.plot(speeds, lifts, marker= 'o', color='green')
+plt.title(f'Lift vs velocity - {plane_name}')
+plt.xlabel('Velocity (m/s)')
+plt.ylabel('Lift (N)')
+plt.grid(True)
+plt.show()
+
+
