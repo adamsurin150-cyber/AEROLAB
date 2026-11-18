@@ -5,4 +5,4 @@
 - AeroCalc: Script to calculate dynamic pressure, lift and drag
 
 # How to run 
--Run the 'main.py' file in Python 
+-Run the file in Python 
