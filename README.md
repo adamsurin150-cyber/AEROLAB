@@ -1,4 +1,4 @@
-# AEROLAB 
+# AeroCalc
 -So my project for Hack Club PHANTOM. With this project im learning Python and Aerodynamics
 
 # Current Modules 
