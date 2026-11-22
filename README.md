@@ -10,7 +10,8 @@ I had a lot of trouble setting everything up, and a lot of syntax errors like fo
 Im total begginer with graphs so i struggled there 
 
 How to run it ?
-1. You have to have installed python
-2. In your terminal install: py -m pip install matplotlib
-
-Sorry, you have to
+1. I would recommend this way:
+2. Look for Releases (on the right side of repositery)
+3. Click on it and download Final_version.exe
+4. Double click it to run it in your terminal
+5. 
