@@ -1,7 +1,7 @@
 # AeroCalc
 Hello!
-So Aerocalc python 'tool' that calculates: lift, drag, weight and a lot of other thing. it calculates it for 5 different aircraft: F-16, Cessna, Ask 21(glider)
-L-39 and Boeing 737 which for some you can choose different loadouts!
+So Aerocalc is python 'tool' that calculates: lift, drag, weight and a lot of other thing. it calculates it for 5 different aircraft: F-16, Cessna, Ask 21(glider)
+L-39 and Boeing 737 which for some you can choose different loadouts! (Its not that acurate but that wasnt the main point so its allright for me)
 
 Its writen entrirely in python with the program VScode
 
@@ -14,7 +14,7 @@ How to run it ?
 2. Look for Releases (on the right side of repositery)
 3. Click on it and download Final_version.exe
 4. Double click it to run it in your terminal
-5. MINIMALIZE THE GRAPH TO SEE RESSULTS (i tried to fix it but i just cant (spent haaaalf an hour on it))
+5. MINIMALIZE THE GRAPH TO SEE RESSULTS (i tried to fix it but i just cant (spent quite a lot of time on it))
 
    
 <img width="1535" height="813" alt="Snímka obrazovky 2026-11-22 200343" src="https://github.com/user-attachments/assets/5c4c60d4-9e4d-4c04-8d5a-0a083e1d8ae7" />
