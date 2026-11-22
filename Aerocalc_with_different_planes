@@ -1,11 +1,14 @@
 import  math 
 import matplotlib.pyplot as plt
+Color = '\33[92m'
+Reset = '\33[0m'
+
 
 #AEROLAB - AeroCalc with specific aircraft
-print('   AEROLAB AeroCalc   ')
+print(f'{Color}  Welcome to Fancy AEROLAB AeroCalc   {Reset}')
 
 # Available aircraft
-print('Chose an aircraft:')
+print(f'Please chose an aircraft:')
 print('1. F-16 (fighter jet)')
 print('2. Cessna 172 (General Aviation)')
 print('3. ASK 21 (Glider)')
@@ -13,7 +16,6 @@ print('3. ASK 21 (Glider)')
 choice = input('Enter the number (1, 2 or 3):')
 
 #Aircraft parameters
-#Simplified but real world estimates
 if choice == '1':
     plane_name = 'F-16'
     wing_area = 27.87   # m^2
@@ -37,7 +39,7 @@ else:
     plane_name = 'Cessna 172'
     wing_area = 16.2
     CL = 1.52
-    CD = 0.0319
+    CD = 0.031
 
 print(f'You selected: {plane_name}')
 
@@ -60,7 +62,6 @@ print(f'Dynamic pressure: {dynamic_pressure:.2f} Pa')
 print(f'Lift: {lift:.2f} N')
 print(f'Drag: {drag:.2f} N')
 print(f'L/D Ratio: {ld_ratio:.2f}')
-
 # Graph
 print(f'Opening graph for {plane_name}...(close it to end)')
 
