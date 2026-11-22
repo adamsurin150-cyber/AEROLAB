@@ -25,7 +25,8 @@ Not really that part of the project but its pretty cool isnt it ?
 
 And for ai i used it for work planning And summary of what i need to do, few how to, what function do you use for ... questions and data for my code.
 
-That would be it sooo THANKS!
+That would be it sooo THANKS! (Sorry for the messy commits,...)
+
 
 
 
