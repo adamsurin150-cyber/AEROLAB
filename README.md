@@ -15,7 +15,19 @@ How to run it ?
 3. Click on it and download Final_version.exe
 4. Double click it to run it in your terminal
 5. MINIMALIZE THE GRAPH TO SEE RESSULTS (i tried to fix it but i just cant (spent haaaalf an hour on it))
-<img width="500" height="333" alt="20240723_111405" src="https://github.com/user-attachments/assets/e4a4a196-078b-41aa-b3fe-a89421a59095" />
+
+   
+<img width="1535" height="813" alt="Snímka obrazovky 2026-11-22 200343" src="https://github.com/user-attachments/assets/5c4c60d4-9e4d-4c04-8d5a-0a083e1d8ae7" />
+
+<img width="500" height="333" alt="20240723_111405" src="https://github.com/user-attachments/assets/f0744042-5a58-4ddc-b692-515eb155f950" />
+Not really that part of the project but its pretty cool isnt it ?
+
+
+And for ai i used it for work planing And summary of what i need to do, few how to, what function do you use for ... questions and data for my code.
+
+That would be it sooo THANKS!
+
+
 
 
 
