@@ -14,4 +14,10 @@ How to run it ?
 2. Look for Releases (on the right side of repositery)
 3. Click on it and download Final_version.exe
 4. Double click it to run it in your terminal
-5. 
+5. MINIMALIZE THE GRAPH TO SEE RESSULTS (i tried to fix it but i just cant (spent haaaalf an hour on it))
+<img width="500" height="333" alt="20240723_111405" src="https://github.com/user-attachments/assets/e4a4a196-078b-41aa-b3fe-a89421a59095" />
+
+
+
+
+
